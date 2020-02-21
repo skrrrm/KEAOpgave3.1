@@ -28,15 +28,13 @@ namespace KEAOpgave3._1
             }
             catch 
             {
-                labelRes.Text = "Only numbers allowed"; // if convertion fails, error
+                labelInfo.Text = "Only numbers allowed"; // if convertion fails, error
             }
 
-            if (n > 0)
-                labelRes.Text = "Number is positive!";
-            else if (n < 0)
+            if (n > 0) // if n is bigger than zero
+                labelRes.Text = "Number is positive!"; 
+            else if (n < 0) // if n is smaller than zero
                 labelRes.Text = "Number is negative!";
-            else
-                labelRes.Text = "Something went wrong!";
         }
     }
 }

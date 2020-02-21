@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label = new System.Windows.Forms.Label();
+            this.labelInfo = new System.Windows.Forms.Label();
             this.textBoxNumber = new System.Windows.Forms.TextBox();
             this.buttonRes = new System.Windows.Forms.Button();
             this.labelRes = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label
+            // labelInfo
             // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(177, 111);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(164, 25);
-            this.label.TabIndex = 0;
-            this.label.Text = "Write a number:";
+            this.labelInfo.AutoSize = true;
+            this.labelInfo.Location = new System.Drawing.Point(114, 117);
+            this.labelInfo.Name = "labelInfo";
+            this.labelInfo.Size = new System.Drawing.Size(164, 25);
+            this.labelInfo.TabIndex = 0;
+            this.labelInfo.Text = "Write a number:";
             // 
             // textBoxNumber
             // 
@@ -52,11 +52,11 @@
             // 
             // buttonRes
             // 
-            this.buttonRes.Location = new System.Drawing.Point(308, 172);
+            this.buttonRes.Location = new System.Drawing.Point(182, 174);
             this.buttonRes.Name = "buttonRes";
-            this.buttonRes.Size = new System.Drawing.Size(151, 42);
+            this.buttonRes.Size = new System.Drawing.Size(277, 42);
             this.buttonRes.TabIndex = 2;
-            this.buttonRes.Text = "button1";
+            this.buttonRes.Text = "Positive / Negative";
             this.buttonRes.UseVisualStyleBackColor = true;
             this.buttonRes.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -76,7 +76,7 @@
             this.Controls.Add(this.labelRes);
             this.Controls.Add(this.buttonRes);
             this.Controls.Add(this.textBoxNumber);
-            this.Controls.Add(this.label);
+            this.Controls.Add(this.labelInfo);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -86,7 +86,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label;
+        private System.Windows.Forms.Label labelInfo;
         private System.Windows.Forms.TextBox textBoxNumber;
         private System.Windows.Forms.Button buttonRes;
         private System.Windows.Forms.Label labelRes;

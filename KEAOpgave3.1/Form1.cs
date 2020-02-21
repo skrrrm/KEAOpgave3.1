@@ -16,13 +16,27 @@ namespace KEAOpgave3._1
         {
             InitializeComponent();
         }
-        // Variabler
+        // Variables
         double n;
-        string res;
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
+            try
+            {
+                n = Convert.ToDouble(textBoxNumber.Text); // Converts text to number
+            }
+            catch 
+            {
+                labelRes.Text = "Only numbers allowed"; // if convertion fails, error
+            }
 
+            if (n > 0)
+                labelRes.Text = "Number is positive!";
+            else if (n < 0)
+                labelRes.Text = "Number is negative!";
+            else
+                labelRes.Text = "Something went wrong!";
         }
     }
 }
